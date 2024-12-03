@@ -1,0 +1,40 @@
+body{
+    background-color: #4E4850;
+    color:white;
+    font-family: "Roboto Mono", monospace;
+}
+.error{
+    color:red;
+}
+#img, .img{
+    margin: 0 auto;
+    width:40%;
+    text-align: center;
+}
+.img{
+
+    height: 30em;
+    display:flex;
+    justify-content: center;
+}
+.cmxform{
+    width:40%;
+    margin:0 auto;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+input, textarea{
+    border-radius: 0.5em;
+    height: 2em;
+    width: 60%;
+}
+.submit{
+    width:20%;
+}
+.back{
+    font-size: 1.5rem;
+    width:2em;
+    height: 2em;
+}

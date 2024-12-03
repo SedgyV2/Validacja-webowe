@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.min.js"></script>
+    <script src="myscripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+  <h2>Napisz swoją opinię</h2>
+  <div id="img">
+    <img src="SadEmoji.gif" alt="Smutna emotka :C">
+  </div>
+    <form class="cmxform" id="commentForm" method="get" action="PoUwadze.html">
+        <fieldset>
+          <legend>Uwagi</legend>
+          <p>
+            <label for="cname">imię (wymagane, przynajmniej 2 litery)</label>
+            <br>
+            <input id="cname" name="name" type="text" minlength="2" >
+          </p>
+          <p>
+            <label for="cemail">E-Mail (Wymagane)</label>
+            <br>
+            <input id="cemail" type="email" name="email" required>
+          </p>
+          <p>
+            <label for="curl">URL (Wymagane)</label>
+            <br>
+            <input id="curl" type="url" name="url">
+          </p>
+          <p>
+            <label for="ccomment">Co się stało? (Wymagane)</label>
+            <br>
+            <textarea id="ccomment" name="comment" required></textarea>
+          </p>
+          <p>
+            <input class="submit" type="submit" value="Prześlij">
+          </p>
+        </fieldset>
+      </form>
+</body>
+</html>
